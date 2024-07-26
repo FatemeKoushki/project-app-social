@@ -1,0 +1,144 @@
+#header{
+    position: relative;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.header h1 {
+    font-size: 4rem;
+    line-height: 1.4;
+    color: var(--color-white);
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.header h1 span {
+    display: block;
+}
+
+ h1 span:nth-child(1) {
+    font-weight: 900;
+    color: blueviolet;
+}
+ h1 span:nth-child(2) {
+    font-weight: 500;
+}
+ h1 span:nth-child(3) {
+    font-weight: 100;
+}
+
+.header h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--color-white);
+    width: 65%;
+    height: 1px;
+}
+.header-right , .header-left {
+    width: 50%;
+}
+
+
+
+.header-right p {
+    color: var(--color-white);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 70%;
+    margin: 3rem 0;
+}
+.header-btn .btn-dark{
+    transition: .3s all ease-in-out;
+}
+.header-btn .btn-dark:hover {
+    background: orangered;
+    border: 2px solid transparent;
+}
+
+.btn-header .btn-light{
+    background: orangered;
+    border: 2px solid transparent;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ .header-left  img{
+    width: 75%;
+}
+
+.floating-icon {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background: var(--light-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2px;
+}
+.floating-icon a {
+    margin: 0;
+}
+.mouse {
+    transform: translateY(-25%);
+    animation: bounce 0.8s infinite alternate;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(-25%);
+
+    }100%{
+        transform: translateY(25%);
+
+
+    }
+}
+
+
+@media screen and (max-width : 992px) {
+    .header h1 {
+        font-size: 3rem;
+    }
+    
+    
+}
+ @media screen and (max-width : 768px) {
+    .header{
+        flex-direction: column;
+    }
+    .header-left , .header-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+    }
+    .header-right{
+        margin-bottom: 4rem;
+    }
+    .header-left img {
+        width: 65%;
+    }
+    section{
+        padding: 6rem 0;
+    }
+    
+    
+   
+    
+    
+    
+ }

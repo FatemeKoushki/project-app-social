@@ -1,0 +1,80 @@
+#subscribe {
+    background: url(../../assets/subscribe-bg.png);
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.subscribe h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    padding-bottom: 3rem;
+}
+form > * {
+    font-family: "vazir";
+}
+form button {
+    background: var(--form-button);
+    border: none;
+    border: 2px solid var(--form-button);
+    padding: 1rem;
+    color: #fff;
+    border-radius: 0 5px 5px 0px;
+}
+form input {
+    padding: 1.1rem;
+    width: 400px;
+    color: #fff;
+    border: none;
+    border-radius:  5px 0 0 5px;
+    background: transparent;
+    border: 1px solid #777;
+    direction: ltr;
+}
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    cursor: pointer;
+}
+.socials .social-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.5rem;
+    border-radius: 50%;
+}
+.socials .social-icon svg {
+    font-size: 1.7rem;
+}
+
+@media screen and (max-width : 600px) {
+    form input {
+        width: 100%;
+        border-radius: 5px;
+    }
+    form button {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 1.7rem;
+
+    }
+    
+    
+}
+
+@media screen and (max-width : 400px){
+    .socials{
+        display: flex;
+        justify-content: space-between;
+    }
+    .socials .social-icon {
+        width: 20%;
+        margin: 0;
+    }
+}

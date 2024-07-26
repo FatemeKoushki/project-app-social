@@ -1,0 +1,60 @@
+#download {
+    background: linear-gradient(
+        90deg , 
+        rgba(45 , 165 ,255,1) 45% ,
+        rgba(1,223,245,1) 100%
+    );
+    text-align: center;
+    color: #fff;
+}
+.download-title{
+    padding-bottom: 3rem;
+
+}
+.download-title h2 {
+    font-size: 3rem;
+    position: relative;
+    font-weight: 300;
+    padding-bottom: 2.5rem;
+
+}
+.download-title h2::before{
+    content: "";
+    position: absolute;
+    width: 10rem;
+    height: 1px;
+    background: #fff;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.download-title p {
+    font-size: 1.3rem;
+}
+.download-apps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download-apps .download-app{
+    width: 12rem;
+    padding: 1rem;
+    border: 2px solid #fff;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width : 400px) {
+    .download-title h2 {
+        font-size: 2rem;
+    }
+    .download-apps{
+        flex-wrap: wrap;
+    }
+    
+    .download-apps .download-app{
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
